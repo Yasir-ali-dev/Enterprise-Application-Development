@@ -4,8 +4,8 @@ import Form from 'react-bootstrap/Form';
 
 function Contact() {
   return (
-    <Container className='d-flex justify-content-center align-items-center p-3'>
-     <Stack className='flex-fill d-flex justify-content-start align-items-center'>
+    <Container className='d-flex justify-content-center align-items-center flex-wrap p-3'>
+     <Stack className='m-xs-3 flex-fill d-flex justify-content-start align-items-center'>
       <img src={"/contact.png"} alt="" width={"250px"}/>
      </Stack> 
     <Form className='flex-fill'>

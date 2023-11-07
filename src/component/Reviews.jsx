@@ -17,11 +17,11 @@ export const BuyerReview =()=>{
     return(
         <Container>
             <h1 >Buyer Reviews</h1>
-            <Stack gap={3} direction='horizontal' className='justify-content-center' >
+            <Row direction='horizontal' className='justify-content-center' >
                 {
                     reviews.map((_,index)=>{
                         return(
-                            <Card style={{ width: '18rem' }}>
+                            <Card className='m-2' style={{ width: '18rem' }}>
                                 <Card.Img variant="top" src="/profile.webp" />
                                 <Card.Body>
                                     <Card.Title>{buyers[index]}</Card.Title>
@@ -36,7 +36,7 @@ export const BuyerReview =()=>{
 
                     })
                 }
-            </Stack>
+            </Row>
            
         </Container>
     )
@@ -50,11 +50,11 @@ export const SellerReview =()=>{
     return(
        <Container className='mt-4 mb-4 '>
        <h1 >Seller Reviews</h1>
-       <Stack gap={3} direction='horizontal' className='justify-content-center' >
+       <Row gap={3} direction='horizontal' className='justify-content-center flex-warp d-flex' >
            {
                sellerReviews.map((_,index)=>{
                    return(
-                    <Card border="primary" style={{ width: '18rem' }}>
+                    <Card  border="primary" className='m-2' style={{ width: '18rem',  }}>
                     <Card.Header>{buyers[index]}</Card.Header>
                     <Card.Body>
                     <Card.Title>{sellerTitle[index]}</Card.Title>
@@ -67,7 +67,7 @@ export const SellerReview =()=>{
 
                })
            }
-       </Stack>
+       </Row>
       
    </Container>
 
